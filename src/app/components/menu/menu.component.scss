@@ -23,8 +23,19 @@
       box-shadow: 5px 0px 10px #939393;
       -webkit-transition: padding-left 0.5s;
 
+      .submenu{
+        display: none;
+        .item{
+          // color: #fff;
+          float: left;
+        }
+      }
+
       &:hover {
         padding-left: 110px;
+        ul{
+          display: block;
+        }
       }
 
       a {

@@ -1,28 +1,31 @@
 <body>
-  <h1>PONENTES</h1>
+  <h1>CRONOGRAMA</h1>
   <div *ngFor="let item of respuesta">
     <div class="logo">
-      <img src="../../../assets/img/person-logueo.jpg" alt="">
+      <img src="../../../assets/img/person-logueo.jpg" alt="" />
     </div>
     <div class="container">
       <div class="tabla">
         <div class="titulo">
-          <h2>{{item.nombres}}</h2>
+          <h2>{{ item.nombres }}</h2>
         </div>
         <div class="descripcion">
           <ul>
-            <li>{{item.tema}}</li>
-            <li>{{item.resumen}}</li>
-            <li>{{item.email}}</li>
-            <li>Fecha</li>
-            <li>Hora</li>
-            <li>Sede</li>
+            <li><p>Tema:</p>{{ item.tema }}</li>
+            <li><p>Resumen:</p>{{ item.resumen }}</li>
+            <li><p>Email:</p>{{ item.email }}</li>
+            <li><p>Fecha:</p>Por confirmar</li>
+            <li><p>Hora:</p>Por confirmar</li>
+            <li><p>Sede:</p>Por confirmar</li>
           </ul>
         </div>
         <div class="link">
-          <a href="#">Asistir</a>
+          <a (click)="asistir()">Asistir</a>
         </div>
       </div>
     </div>
+  </div>
+  <div class="volver">
+    <a href="home">Volver</a>
   </div>
 </body>

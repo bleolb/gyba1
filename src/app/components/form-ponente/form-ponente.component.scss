@@ -19,11 +19,11 @@ body:before {
 
 .form {
   position: absolute;
-  top: 65%;
+  top: 67%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 440px;
-  height: 930px;
+  height: 960px;
   padding: 10px 60px;
   background: #00000099;
   margin-bottom: 30px;
@@ -80,6 +80,15 @@ body:before {
     border: none;
     outline: none;
     margin-top: 10%;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0aeba0ad;
+    color: #fff;
+    padding: 5px 190px;
+    border-radius: 50px;
+    font-size: 17px;
   }
 
   textarea {
